@@ -7,9 +7,9 @@ import itertools
 from operator import itemgetter
 
 
-# width, dist, res = 28, 56, (1366, 768)
+width, dist, res = 28, 56, (1366, 768)
 
-width, dist, res = 53, 64, (1920, 1080)
+# width, dist, res = 53, 64, (1920, 1080)
 
 mon = monitors.Monitor('default')
 mon.setWidth(width)
@@ -28,8 +28,8 @@ win = visual.Window(size=res,
 mouse = event.Mouse(visible=False, win=win)
 
 
-# fov = (26.0, 14.0)
-fov = (42.0, 20.0)
+fov = (26.0, 14.0)
+# fov = (42.0, 20.0)
 
 w = fov[0]
 h = fov[1]
